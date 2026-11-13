@@ -1,0 +1,344 @@
+    1  mkdir devops
+    2  cd devops
+    3  mkdir week1
+    4  cd week1
+    5  nano hello.sh
+    6  git init
+    7  git add hello.sh
+    8  git commit -m "Created hello script"
+    9  git branch -M main
+   10  git remote add origin https://github.com/nudratmir7/devopsWeek1.git
+   11  git push -u origin main
+   12  git config --global user.name "Nudrat Mir"
+   13  git config --global user.email "nudratmir7@gmail.com"
+   14  git commit -m "Created hello script"
+   15  git branch -M main
+   16  git push -u origin main
+   17  nano hello.sh
+   18  git add hello.sh
+   19  git commit -m "Updated text to DEVOPS"
+   20  git push
+   21  ssh-keygen -t ed25519 -C "nudratmir7@gmail.com"
+   22  cat ~/.ssh/id_ed25519.pub
+   23  ssh -T git@github.com
+   24  git config --global url."git@github.com:".insteadOf "https://github.com/"
+   25  cat ~/.gitconfig
+   26  cd ~/devops
+   27  nudratmir7@cloudshell:~/devops$
+   28  cd ~/devops
+   29  mkdir week2
+   30  cd week2
+   31  git clone git@github.com:nudratmir7/devopsWeek1.git
+   32  cd devopsWeek1
+   33  ls
+   34  cat hello.sh
+   35  nano hello.sh
+   36  cat hello.sh
+   37  git add hello.sh
+   38  git commit -m "Version 3 - added nice to be here"
+   39  git push
+   40  git log --oneline
+   41  git tag v1 10e0ae6
+   42  git tag v2 df8923c
+   43  git tag v3 5fcf707
+   44  git tag
+   45  git push origin --tags
+   46  cd ~/devops
+   47  mkdir week2tag
+   48  cd week2tag
+   49  git clone git@github.com:nudratmir7/devopsWeek1.git
+   50  cd devopsWeek1
+   51  git fetch --all --tags
+   52  git checkout -b tag-test v1
+   53  cat hello.sh
+   54  nano hello.sh
+   55  cat hello.sh
+   56  git add hello.sh
+   57  git commit -m "tag test"
+   58  git push -u origin tag-test
+   59  cd ~/devops/week2/devopsWeek1
+   60  git checkout main
+   61  git pull
+   62  git checkout -b CR101
+   63  nano cr101.sh
+   64  git add cr101.sh
+   65  git commit -m "CR101 - add cr101.sh"
+   66  git push -u origin CR101
+   67  git checkout main
+   68  git checkout -b CR102
+   69  nano cr102.sh
+   70  git add cr102.sh
+   71  git commit -m "CR102 - add cr102.sh"
+   72  git push -u origin CR102
+   73  cd ~/devops/week2/devopsWeek1
+   74  git checkout main
+   75  git pull
+   76  git merge CR102
+   77  git push
+   78  git branch -D CR102
+   79  git push origin --delete CR102
+   80  git branch -D CR101
+   81  git branch -a
+   82  cd ~/devops
+   83  mkdir friendrepo
+   84  cd friendrepo
+   85  git clone git@github.com:pomole578/devopsweek1.git
+   86  cd devopsweek1
+   87  git remote -v
+   88  git checkout -b CR103
+   89  nano cr103.sh
+   90  git add cr103.sh
+   91  git commit -m "CR103 - pushed by nudratmir7"
+   92  git push -u origin CR103
+   93  git checkout main
+   94  git pull
+   95  nano hello.sh
+   96  git add hello.sh
+   97  git commit -m "CR104 - pushed by nudratmir7"
+   98  git push
+   99  cd ~
+  100  mkdir devsopsProj
+  101  cd devsopsProj
+  102  git clone git@github.com:nudratmir7/devsopsProj.git
+  103  cd devsopsProj
+  104  git remote -v
+  105  nano countN.sh
+  106  rm countN.sh
+  107  ls
+  108  nano count1.sh
+  109  nano count2.sh
+  110  nano count3.sh
+  111  nano count4.sh
+  112  nano count5.sh
+  113  nano count6.sh
+  114  nano count7.sh
+  115  nano count8.sh
+  116  nano count9.sh
+  117  nano count10.sh
+  118  ls
+  119  bash count1.sh
+  120  git add .
+  121  git commit -m "add 10 count scripts"
+  122  git push
+  123  nano count10.sh
+  124  bash count1.sh
+  125  cd ~/devops
+  126  mkdir naomirepo
+  127  cd naomirepo
+  128  git clone git@github.com:Naomiopeyemi/devopsweek1.git
+  129  cd devopsweek1
+  130  git remote -v#
+  131  git remote -v
+  132  git checkout -b CR103
+  133  nano cr103.sh
+  134  git add cr103.sh
+  135  git commit -m "CR103 - pushed by nudratmir7"
+  136  git push -u origin CR103
+  137  git checkout main
+  138  git pull
+  139  nano hello.sh
+  140  cat hello.sh
+  141  git add hello.sh
+  142  git commit -m "CR104 - pushed by nudratmir7"
+  143  git push
+  144  cat ~/.ssh/id_ed25519.pub
+  145  ssh -T git@github.com
+  146  cd ~
+  147  mkdir pearseRepo
+  148  cd pearseRepo
+  149  git clone git@github.com:pearse1104/X00229752.git
+  150  cd X00229752
+  151  nano hello.txt
+  152  git add hello.txt
+  153  git commit -m "add hello.txt - X00229752"
+  154  git push
+  155  cd ~/devops
+  156  mkdir v1
+  157  cd v1
+  158  git clone git@github.com:nudratmir7/devsopsProj.git
+  159  cd devsopsProj
+  160  git checkout -b ONE-V1
+  161  nano count1.sh
+  162  cat count1.sh
+  163  git add count1.sh
+  164  ls
+  165  cd ~/devops/v1/devopsProj
+  166  git branch
+  167  cd ~/devops
+  168  ls
+  169  mkdir v1
+  170  cd v1
+  171  ls
+  172  cd devopsProj
+  173  cd v1
+  174  ls
+  175  cd devopsProj
+  176  devsopsProj
+  177  cd devsopsProj
+  178  ls
+  179  git branch
+  180  cat count1.sh
+  181  git log --oneline -3
+  182  git branch -r
+  183  git add count1.sh
+  184  git commit -m "ONE-V1: change count1 echo to ONE(1), #12"
+  185  git push -u origin ONE-V1
+  186  cd ~/devops
+  187  mkdir v2
+  188  cd v2
+  189  git clone git@github.com:nudratmir7/devsopsProj.git
+  190  cd devsopsProj
+  191  git checkout -b ONE-V2
+  192  nano count1.sh
+  193  cat count1.sh
+  194  git add count1.sh
+  195  git commit -m "ONE-V2: change count1 echo to 1(ONE), #13"
+  196  git push -u origin ONE-V2
+  197  cd ~/devops
+  198  mkdir mergeTest
+  199  cd mergeTest
+  200  git clone git@github.com:nudratmir7/devsopsProj.git
+  201  cd devsopsProj
+  202  git fetch --all
+  203  git checkout main
+  204  git merge ONE-V1
+  205  git merge origin/ONE-V1
+  206  cat count1.sh
+  207  git push
+  208  git merge origin/ONE-V2
+  209  cat count1.sh
+  210  nano count1.sh
+  211  cat count1.sh
+  212  git add count1.sh
+  213  git commit -m "resolve conflict: keep ONE-V1 version"
+  214  git push
+  215  cd ~/devops
+  216  mkdir v1-2
+  217  cd v1-2
+  218  git clone git@github.com:nudratmir7/devsopsProj.git
+  219  cd devsopsProj
+  220  git checkout -b TWO-V1
+  221  git remote -v
+  222  nano count2.sh
+  223  cat count2.sh
+  224  git add count2.sh
+  225  git commit -m "TWO-V1: change count2 echo to TWO(2), #14"
+  226  git push -u origin TWO-V1
+  227  cd ~/devops
+  228  mkdir v2-2
+  229  cd v2-2
+  230  git clone git@github.com:nudratmir7/devsopsProj.git
+  231  cd devsopsProj
+  232  git checkout -b TWO-V2
+  233  nano count2.sh
+  234  cat count2.sh
+  235  git add count2.sh
+  236  git commit -m "TWO-V2: change count2 echo to 2(TWO), #15"
+  237  git push -u origin TWO-V2
+  238  git config --global user.name "nudratmir7"
+  239  git config --global user.email "nudratmir7@gmail.com"
+  240  git config --global init.defaultBranch main
+  241  ssh -T git@github.com
+  242  gh auth status
+  243  gh auth login
+  244  gh auth status
+  245  gh auth login
+  246  F50F-6324
+  247  gh auth login
+  248  gh auth status
+  249  mkdir ca1
+  250  cd ca1
+  251  git clone git@github.com:pearse1104/X00229752.git
+  252  cd X00229752
+  253  echo "test" > test.txt
+  254  git add test.txt
+  255  git commit -m "test push"
+  256  git push origin main
+  257  git config --global user.name "nudratmir7"
+  258  git config --global user.email "nudratmir7@gmail.com"
+  259  git config --global init.defaultBranch main
+  260  ssh -T git@github.com
+  261  gh auth login
+  262  gh auth status
+  263  gh auth switch
+  264  gh auth status
+  265  cd ~
+  266  mkdir ca1
+  267  cd ca1
+  268  git clone git@github.com:pearse1104/X00229752.git
+  269  cd ~/ca1/X00229752
+  270  echo "ready" > test.txt
+  271  git add test.txt
+  272  git commit -m "test"
+  273  git push origin main
+  274  cd ca1
+  275  nano user.sh
+  276  chmod +x user.sh
+  277  ./user.sh
+  278  git add user.sh
+  279  git commit -m "Q1 script"
+  280  git push origin main
+  281  cd ~/ca1
+  282  gh repo create devopsCA1cloud --public --clone
+  283  cd devopsCA1cloud
+  284  echo "mydID.txt" > user.sh
+  285  echo "NudratMir123" > myID.txt
+  286  git add.
+  287  git add .
+  288  git commit -m "add Q1 files"
+  289  git push -u origin main
+  290  gh label create bug --color FF0000
+  291  gh label create enhancement --color 00FF00
+  292  gh issue create --title "fix bug" --body "fix it" --label bug --assignee @me
+  293  gh issue create --title "add feature" --body "add it" --label enhancement --assignee @me
+  294  cd ~/ca1/X00229752
+  295  cp ~/ca1/devopsCA1cloud/user.sh .
+  296  cp ~/ca1/devopsCA1cloud/myID.txt .
+  297  git checkout -b myCloudBranch
+  298  nano myID.txt
+  299  git add .
+  300  git commit -m "Second Version"
+  301  git push -u origin myCloudBranch
+  302  git checkout main
+  303  git merge myCloudBranch
+  304  git push origin main
+  305  history > history.txt
+  306  git add history.txt
+  307  git commit -m "upload history"
+  308  git push origin main
+  309  cd ~
+  310  gh create repo
+  311  gh repo create lab9 --public --clone
+  312  cd lab9
+  313  gh label create EPIC --color FF0000
+  314  cd
+  315  gh create repo
+  316  cd ~gh issue create --title "create validate-data script" --label enhancement --assignee @me
+  317  git config --global user.name "nudratmir7"
+  318  git config --global user.email "nudratmir7@gmail.com"
+  319  ssh -T git@github.com
+  320  gh auth status
+  321  ls
+  322  cd lab9
+  323  ls -a
+  324  nano validate-data.sh
+  325  chmod +x validate-data.sh
+  326  mkdir -p .github/workflows
+  327  nano .github/workflows/basictests.yml
+  328  git add .
+  329  git commit -m "lab9 setup and yaml"
+  330  git push -u origin main
+  331  gh issue create --title "do lab9" --label EPIC --assignee @me
+  332  gh issue create --title "do lab9" --body "epic" --label EPIC --assignee @me
+  333  gh issue create --title "create validate-data script" --body "script" --label enhancement --assignee @me
+  334  gh issue create --title "create yaml test script" --body "yaml" --label enhancement --assignee @me
+  335  git checkout -b test
+  336  nano validate-data.sh
+  337  git add validate-data.sh
+  338  git commit -m "changed max name length to 20"
+  339  git push -u origin test
+  340  nano .github/workflows/basictests.yml
+  341  git add .github/workflows/basictests.yml
+  342  git commit -m "fixed yaml test to fail with new length"
+  343  git push origin test
+  344  history > history.txt
