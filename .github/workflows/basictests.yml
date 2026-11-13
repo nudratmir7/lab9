@@ -19,7 +19,7 @@ jobs:
           echo "Script output was: $OUTPUT"
           if [ "$OUTPUT" == "PASS" ]; then echo "Test Passed!"; else echo "Test Failed"; exit 1; fi
           
-          OUTPUT=$(bash validate-data.sh "a really long name" "0831122334")
+          OUTPUT=$(bash validate-data.sh "this name is definitely over twenty chars" "0831122334")
           echo "Script output was: $OUTPUT"
           if [ "$OUTPUT" == "FAIL" ]; then echo "Test Passed!"; else echo "Test Failed"; exit 1; fi
           
